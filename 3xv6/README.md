@@ -228,3 +228,9 @@ Once you have the offending address, next we need to check if it is from the pag
 Voila! you should be good to go.
 
 To check if the stack grows correctly, write a recursive program that nests deep enough to get a stack longer than 1 page. You should get a page fault and grow the stack correctly if your implementation works.
+
+Note: Lab Instructions adopted from:
+
+https://www.cs.ucr.edu/~csong/cs153/20f/lab3.html
+
+The lab instructions are part of the course work for CS153 - Operating Systems
