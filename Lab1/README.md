@@ -51,7 +51,9 @@ Then run "make TOOLPREFIX=i386-jos-elf-". Now install the QEMU PC
 simulator and run "make qemu".
 
 ===================================================================================
+
                             Lab1: System Calls
+
 ===================================================================================
 
 1. Introduction
@@ -110,6 +112,7 @@ Breakpoint 1, exec (path=0x1c "/init", argv=0x8dfffe98) at exec.c:12
 
 Here we stop execution after the OS is initialized at the stage where it is starting the first process (init). If you type continue again, you will break again as follows:
 
+```
 gdb) cont
 Continuing.
 [Switching to Thread 1]
@@ -117,6 +120,7 @@ Continuing.
 
 Breakpoint 1, exec (path=0x8c3 "sh", argv=0x8dffee98) at exec.c:12
 12{
+```
 
 As you can see, at this stage, init started a shell process which is the xv6 shell we get when the OS boots. If you continue again, gdb will not return since it is waiting for a command to be started in the shell. Switch to the other window and try typing a command (for example, cat README) at which time you will get another break as the shell forks then execs the cat program.
 
