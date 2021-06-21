@@ -78,3 +78,8 @@ Implement priority donation/priority inheritance. (Possible Bonus 2)
 
 Add fields to track the scheduling performance of each process. These values should allow you to compute the turnaround time and wait time for each process. Add a system call to extract these values or alternatively print them out when the process exits. (Possible Bonus 3)
 
+Note: Lab Instructions adopted from:
+
+https://www.cs.ucr.edu/~csong/cs153/20f/lab2.html
+
+The lab instructions are part of the course work for CS153 - Operating Systems
